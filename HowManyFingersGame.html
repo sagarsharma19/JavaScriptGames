@@ -1,0 +1,31 @@
+<html>
+	<head>
+		<title>internal javascript</title>
+	</head>
+	<body>
+		
+		<p>Enter A number! between 0-5</p>
+		<input type="text" id="userInput">
+		<button id="check">Guess</button>
+		
+		<script type="text/javascript">
+			
+			document.getElementById("check").onclick=function(){
+				var number=Math.floor(Math.random()*6);
+				if(number==document.getElementById("userInput").value){
+					alert("You Guessed Right! You are awesome");
+					
+				}
+				else{
+					alert("Hard luck! Try again");
+				
+				}
+			
+			}
+			
+			
+			
+		</script>
+	
+	</body>
+</html>
